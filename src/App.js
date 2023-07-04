@@ -60,6 +60,7 @@ function App() {
                 flyySDK.setActionButtonColor('#faa232');
                 flyySDK.setActionButtonText('Reward Points');
                 flyySDK.init(JSON.stringify(data));
+                //new commit in main
                 flyySDK.setUserName("bhai bhai");
                 flyySDK.setUserBankCredntials({acc_type: "upi", upi_id: "vinuyer@ybl"})
             })();
