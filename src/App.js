@@ -55,15 +55,12 @@ function App() {
         }).then(res => res.json()).then((res) => {
             console.log(res);
             data.ext_user_token = res.token;
-            (function () {
-                flyySDK.setActionButtonPosition('left');
-                flyySDK.setActionButtonColor('#faa232');
-                flyySDK.setActionButtonText('Reward Points');
-                flyySDK.init(JSON.stringify(data));
-                //new commit in main
-                flyySDK.setUserName("bhai bhai");
-                flyySDK.setUserBankCredntials({acc_type: "upi", upi_id: "vinuyer@ybl"})
-            })();
+            flyySDK.setActionButtonPosition('left');
+            flyySDK.setActionButtonColor('#faa232');
+            flyySDK.setActionButtonText('Reward Points');
+            flyySDK.init(JSON.stringify(data));
+            flyySDK.setUserName("bhai bhai");
+            flyySDK.setUserBankCredntials({acc_type: "upi", upi_id: "vinuyer@ybl"})
         })
     }
 
